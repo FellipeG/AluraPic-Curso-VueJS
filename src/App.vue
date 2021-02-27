@@ -17,18 +17,13 @@ export default {
 
     return {
       titulo: "Alurapic",
-      fotos: [
-        {
-          url: "https://static1.patasdacasa.com.br/articles/8/10/38/@/4864-o-cachorro-inteligente-mostra-essa-carac-opengraph_1200-1.jpg",
-          titulo: "cachorro"
-        },
-        {
-          url: "https://static1.patasdacasa.com.br/articles/8/10/38/@/4864-o-cachorro-inteligente-mostra-essa-carac-opengraph_1200-1.jpg",
-          titulo: "cachorro2"
-        }
-      ]
+      fotos: []
     }
 
+  },
+  
+  created() {
+    alert('criei o componente');
   }
   
 }
