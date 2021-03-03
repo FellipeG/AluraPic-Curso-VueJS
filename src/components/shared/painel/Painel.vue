@@ -2,8 +2,8 @@
 	<div class="corpo">
 		<div class="painel">
 			<h2 class="painel-titulo">{{ titulo }}</h2>
-				<div class="painel-conteudo">
-				</div>
+				<slot class="painel-conteudo">
+				</slot>
 		</div>
 	</div>
 </template>
@@ -16,7 +16,9 @@ export default {
 }
 </script>
 
-<style>
+
+<!-- Scoped serve para isolar todas as classes declaradas dentro do componente para serem utilizadas somente pelos elementos do componente -->
+<style scoped>
 
 	/* estilo do painel */ 
 
