@@ -2,7 +2,7 @@
 	<div class="corpo">
 		<h1 class="centralizado">{{ titulo }}</h1>
 
-		<input type="search" class="filtro" v-on:input="filtro = $event.target.value" placeholder="Filtre pelo título" />
+		<input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filtre pelo título" />
 		<ul class="lista-fotos">
 			<li class="lista-fotos-item" v-for="foto of fotosComFiltro">
 				<meu-painel :titulo="foto.titulo">
