@@ -1,5 +1,6 @@
 <template>
-	<div class="corpo">		
+	<div class="corpo">	
+		<router-view></router-view>	
 	</div>
 </template>
 
