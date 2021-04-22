@@ -7,7 +7,7 @@
 			<li class="lista-fotos-item" v-for="foto of fotosComFiltro">
 				<meu-painel :titulo="foto.titulo">
 					<imagem-responsiva :src="foto.url" :alt="foto.titulo" />
-					<botao tipo="button" rotulo="Remover" />
+					<botao tipo="button" rotulo="Remover" @click.native="remove(foto)" />
 				</meu-painel>
 			</li>
 		</ul>
@@ -35,6 +35,17 @@ export default {
 			titulo: "Alurapic",
 			fotos: [],
 			filtro: ''
+		}
+
+	},
+
+	methods: {
+
+		remove(foto) {
+
+			if (confirm('Deseja remover esta foto?')) {
+				alert('Remover a foto! ' + foto.titulo);
+			}
 		}
 
 	},
