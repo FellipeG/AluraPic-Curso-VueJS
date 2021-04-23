@@ -6,7 +6,27 @@
 
 export default {
 
-    props: ['tipo', 'rotulo', 'confirmacao', 'estilo'],
+    props: {
+        tipo: {
+            required: true,
+            type: String
+        },
+
+        rotulo: {
+            required: true,
+            type: String
+        },
+
+        confirmacao: {
+            required: false,
+            type: Boolean
+        },
+
+        estilo: {
+            required: false,
+            type: String
+        }
+    },
     
     methods: {
         disparaAcao() {
